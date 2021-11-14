@@ -1,4 +1,4 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { createContext, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AddEvent from "./components/Admin/AddEvent";
@@ -10,6 +10,7 @@ import Products from "./components/Products/Products";
 import Login from "./components/Login/Login";
 import Order from "./components/Order/Order";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Home from './components/Home/Home';
 
 export const UserContext= createContext();
 export const ProductContext= createContext();
@@ -25,9 +26,12 @@ console.log(orderProduct);
         <Header/>
         <Switch>
           <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/products">
             <Products/>
           </Route>
-          <Route exact path="/contact">
+          <Route path="/contact">
             <Contact/>
           </Route>
           <Route path="/login">

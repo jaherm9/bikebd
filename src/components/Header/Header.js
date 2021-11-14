@@ -125,6 +125,9 @@ const Header = () => {
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <Button color="default" onClick={() => history.push("/")}>
+                Home
+              </Button>
+              <Button color="default" onClick={() => history.push("/products")}>
                 Products
               </Button>
               <Button color="default" onClick={() => history.push("/order")}>

@@ -31,6 +31,7 @@ const Footer = () => {
                         <p>BikeValley.com is the first and largest website about motor bike in Bangladesh. We have started our journey since 25th January 2012. We have experienced and hard working team and our prime goal is to provide motorcycle related necessary information to the visitors in easy way</p>
                     </div>
                     <div class="col item social"><i class="icon ion-social-facebook"></i><i class="icon ion-social-twitter"></i><i class="icon ion-social-snapchat"></i><i class="icon ion-social-instagram"></i></div>
+                    
                 </div>
                 <p class="copyright">Bike Valley © 2021</p>
             </div>

@@ -72,7 +72,7 @@ const Home = () => {
       
       <Container className={classes.container}>
         <Typography className={classes.heading} variant="h3" gutterBottom>
-          Get Your Computer within your Budget
+          Get Your Best Bike
         </Typography>
         <div className={classes.searchbox}>
         <div className={classes.searchIcon}>

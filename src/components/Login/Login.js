@@ -1,3 +1,4 @@
+import { FcGoogle } from "react-icons/fc";
 import { Button } from "@material-ui/core";
 // import firebase from "firebase/app";
 import firebase from 'firebase/compat/app';
@@ -11,6 +12,7 @@ import { UserContext } from "../../App";
 import Logo from "../../Image/logo.png";
 import firebaseConfig from "./firebase.config";
 import "./Login.css";
+
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
 }
@@ -51,7 +53,7 @@ const Login = () => {
         </Link>
       </div>
       <div className="googlelogin">
-        <Button variant="contained" size="large" color="primary"  onClick={googleLogin}>SignIn With Google</Button>
+        <Button variant="contained" size="large" color="primary"  onClick={googleLogin}><FcGoogle className="react-icon"/>SignIn With Google</Button>
       </div>
     </div>
     );

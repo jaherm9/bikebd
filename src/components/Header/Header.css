@@ -15,3 +15,8 @@
 .MuiButton-root:hover {
   background: #3f90fc !important;
 }
+
+.react-icon{
+  width:15px;
+  height:15px;
+}

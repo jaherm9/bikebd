@@ -1,3 +1,6 @@
+import { MdOutlineHome, MdShop2, MdElectricBike, MdOutlineContactPhone, MdOutlineLogin, MdOutlineLogout,  MdAdminPanelSettings} from "react-icons/md";
+
+
 import {
   AppBar,
   Button,
@@ -10,7 +13,7 @@ import {
 } from "@material-ui/core";
 import { MoreVert } from "@material-ui/icons";
 import React, { useContext } from "react";
-import { Link, NavLink, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { UserContext } from "../../App";
 import logo from '../../Image/logo.png';
 import './Header.css';
@@ -125,15 +128,15 @@ const Header = () => {
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <Button color="default" onClick={() => history.push("/")}>
-                Home
+               <MdOutlineHome className="react-icon"/> Home
               </Button>
               <Button color="default" onClick={() => history.push("/products")}>
-                Products
+               <MdShop2 className="react-icon"/> Products
               </Button>
               <Button color="default" onClick={() => history.push("/order")}>
-                Order
+               <MdElectricBike className="react-icon"/> Order
               </Button>
-                  <Link to="/contact" style={{textDecoration:"none"}}>  <Button color="default">Contact Us</Button></Link>
+                  <Link to="/contact" style={{textDecoration:"none"}}>  <Button color="default">  <MdOutlineContactPhone className="react-icon"/> Contact Us</Button></Link>
                   
               {loggedUser?.displayName ? (
             <>
@@ -142,12 +145,12 @@ const Header = () => {
               </Button>
 
               <Button color="default" className={classes.custombtn} onClick={() => setLoggedUser({})} style={{ color: 'white' }}>
-                Log Out
+              <MdOutlineLogin className="react-icon"/> Log Out
               </Button>
             </>
           ) :(
               <Button color="default" className={classes.custombtn}onClick={() => history.push("/login")}>
-                Login
+                <MdOutlineLogout className="react-icon"/>Login
               </Button>)}
               <Button
                 color="default"
@@ -155,7 +158,7 @@ const Header = () => {
                 style={{ background: "#434141" }}
                 onClick={() => history.push("/addProduct")}
               >
-                Admin
+                 <MdAdminPanelSettings className="react-icon"/> Admin
               </Button>
             </div>
             <div className={classes.sectionMobile}>

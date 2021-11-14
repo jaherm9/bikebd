@@ -11,6 +11,7 @@ import Login from "./components/Login/Login";
 import Order from "./components/Order/Order";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
 
 export const UserContext= createContext();
 export const ProductContext= createContext();
@@ -53,6 +54,7 @@ console.log(orderProduct);
             <h1 style={{textAlign: "center"}}>page not found</h1>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
       </ProductContext.Provider>  
     </UserContext.Provider>

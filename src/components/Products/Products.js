@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Home = () => {
+const Products = () => {
     const classes = useStyles();
   const [orderProduct,setOderProduct]=useContext(ProductContext)
   const [cardData, setCardData] = useState();
@@ -108,4 +108,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Products;

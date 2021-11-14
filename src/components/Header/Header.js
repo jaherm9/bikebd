@@ -75,7 +75,7 @@ const Header = () => {
     >
       <MenuItem>
         <Button color="default" onClick={() => history.push("/")}>
-          Home
+        Products
         </Button>
       </MenuItem>
       <MenuItem>
@@ -125,7 +125,7 @@ const Header = () => {
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <Button color="default" onClick={() => history.push("/")}>
-                Home
+                Products
               </Button>
               <Button color="default" onClick={() => history.push("/order")}>
                 Order

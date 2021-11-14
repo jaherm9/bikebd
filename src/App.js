@@ -6,7 +6,7 @@ import ManageProduct from "./components/Admin/ManageProduct/ManageProduct";
 import Checkout from "./components/Checkout/Checkout";
 import Contact from "./components/Contact/Contact/Contact";
 import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
+import Products from "./components/Products/Products";
 import Login from "./components/Login/Login";
 import Order from "./components/Order/Order";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
@@ -25,7 +25,7 @@ console.log(orderProduct);
         <Header/>
         <Switch>
           <Route exact path="/">
-            <Home/>
+            <Products/>
           </Route>
           <Route exact path="/contact">
             <Contact/>

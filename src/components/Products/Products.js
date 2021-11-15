@@ -63,7 +63,7 @@ const Products = () => {
     fetch("https://mighty-gorge-79417.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
-        setCardData(data);
+        setCardData(data.slice(1,7));
         setOderProduct(data);
       });
   }, []);

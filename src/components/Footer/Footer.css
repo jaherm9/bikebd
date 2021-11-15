@@ -27,6 +27,7 @@
   
   .footer-dark ul a:hover {
     opacity:0.8;
+    color:coral;
   }
   
   @media (max-width:767px) {

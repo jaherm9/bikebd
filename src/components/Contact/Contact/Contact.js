@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from "react-bootstrap";
-
-
+import { MdOutlineContactPhone } from "react-icons/md";
 const Contact = () => {
     return (
         <div>
@@ -52,7 +51,7 @@ const Contact = () => {
                   </div>
                   <div class="mt-2">
                     <button type="submit" class="btn btn-lg btn-danger">
-                      CONTACT US
+                    <MdOutlineContactPhone className="react-icon"/> CONTACT US
                     </button>
                   </div>
                 </form>

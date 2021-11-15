@@ -1,29 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGoogle, faTwitter, faDribbble } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faDribbble } from "@fortawesome/free-brands-svg-icons";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div class="footer-dark mt-5">
+    <div class="footer-dark mt-3">
       <footer>
       
         <div class="container">
           <div class="row">
-          <div>
-              <div>
-                <img src="/src/Image/logo.png" alt="" />
-              </div>
-              <p>
-                BikeValley.com is the first and largest website about motor bike
-                in Bangladesh. We have started our journey since 25th January
-                2012. We have experienced and hard working team and our prime
-                goal is to provide motorcycle related necessary information to
-                the visitors in easy way
-              </p>
-            </div>
-            <div class="col-sm-6 col-md-3 item">
+            <div class="col-sm-6 col-md-4 item">
               <h3>Services</h3>
               <ul>
                 <li>
@@ -40,7 +28,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="col-sm-6 col-md-3 item">
+            <div class="col-sm-6 col-md-4 item">
               <h3>About</h3>
               <ul>
                 <li>
@@ -57,21 +45,19 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="col-sm-6 col-md-3 item">
+            <div class="col-sm-6 col-md-4 item">
               <h3>Stay Connected</h3>
               <ul>
                 <li>
-                  <NavLink to="/"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></NavLink>
+                  <NavLink to="/"><FontAwesomeIcon icon={faFacebook} size = '2x'></FontAwesomeIcon></NavLink>
                 </li>
                 <li>
-                  <NavLink to="/products"><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></NavLink>
+                  <NavLink to="/products"><FontAwesomeIcon icon={faTwitter} size = '2x'></FontAwesomeIcon></NavLink>
                 </li>
                 <li>
-                  <NavLink to="/order"><FontAwesomeIcon icon={faDribbble}></FontAwesomeIcon></NavLink>
+                  <NavLink to="/order"><FontAwesomeIcon icon={faDribbble} size = '2x'></FontAwesomeIcon></NavLink>
                 </li>
-                <li>
-                  <NavLink to="/contact"><FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></NavLink>
-                </li>
+               
               </ul>
             </div>            
           </div>

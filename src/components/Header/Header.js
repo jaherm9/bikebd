@@ -177,6 +177,7 @@ const Header = () => {
                     </Button>
                   </>
                 ) : (
+                  <>
                   <Button
                     color="default"
                     className={classes.custombtn}
@@ -184,6 +185,15 @@ const Header = () => {
                   >
                     <MdOutlineLogout className="react-icon" /> Login
                   </Button>
+
+                  <Button
+                    color="default"
+                    className={classes.custombtn}
+                    onClick={() => history.push("/register")}
+                  >
+                    <MdOutlineLogout className="react-icon" /> Register
+                  </Button>
+                  </>
                 )}
           {
              loggedUser.email&&<Button

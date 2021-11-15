@@ -12,6 +12,7 @@ import Order from "./components/Order/Order";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
+import Register from './components/Register/Register';
 
 export const UserContext= createContext();
 export const ProductContext= createContext();
@@ -19,7 +20,7 @@ export const ProductContext= createContext();
 function App() {
   const [loggedUser,setLoggedUser]=useState({})
   const [orderProduct,setOrderProduct]=useState({})
-console.log(orderProduct);
+
   return (
     <UserContext.Provider value={[loggedUser, setLoggedUser]}>
     <ProductContext.Provider value={[orderProduct,setOrderProduct]}>
@@ -37,6 +38,9 @@ console.log(orderProduct);
           </Route>
           <Route path="/login">
             <Login/>
+          </Route>
+          <Route path="/register">
+            <Register/>
           </Route>
           <PrivateRoute path="/order">
             <Order/>

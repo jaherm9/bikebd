@@ -57,14 +57,14 @@ const useStyles = makeStyles((theme) => ({
 
 const Products = () => {
     const classes = useStyles();
-  const [orderProduct,setOderProduct]=useContext(ProductContext)
+  const [orderProduct,setOrderProduct]=useContext(ProductContext)
   const [cardData, setCardData] = useState();
   useEffect(() => {
     fetch("https://mighty-gorge-79417.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
-        setCardData(data.slice(1,7));
-        setOderProduct(data);
+        setCardData(data);
+        setOrderProduct(data);
       });
   }, []);
     return (

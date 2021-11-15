@@ -1,10 +1,23 @@
-import React from 'react';
+import { Grid } from '@material-ui/core';
+import { Card, CircularProgress, LinearProgress } from "@material-ui/core";
+import React, { useEffect, useState } from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import slider1 from "../../Image/slider1.jpg"
 import slider2 from "../../Image/slider2.jpg"
 import slider3 from "../../Image/slider3.jpg"
 import Products from '../Products/Products';
+import Bikes from './Bikes';
+
 const Home = () => {
+ const [bikes,setBikes] = useState([]);
+
+  useEffect(() => {
+    fetch("https://mighty-gorge-79417.herokuapp.com/products")
+      .then((res) => res.json())
+      .then((data) => {
+       setBikes(data)
+      });
+  }, []);
     return (
         <div>
             <Container className="">  
@@ -31,8 +44,10 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+
+     <Bikes/>
       </Container>
-      <Products></Products>
+    
         </div>
     );
 };
